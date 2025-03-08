@@ -1,0 +1,33 @@
+System Description
+Introduction
+ATM (Automated Teller Machine) is one of the most widely used financial systems in daily life. Beyond basic functions such as cash withdrawal and deposit, ATMs also offer services like account balance inquiries, transfers, and password resets. The ATM system must ensure high security and stability to protect users' financial information. Additionally, user-friendliness is crucial, so ATMs often include features such as language selection and screen brightness adjustment.
+
+Demand Phase
+System Requirements
+Basic functions: Cash withdrawal, deposit, balance inquiry, transfers, password reset.
+Security requirements: High-level encryption, secure transactions.
+User-friendly features: Language selection, screen brightness adjustment.
+System Users
+Customers: Use ATMs for various financial transactions.
+Bank Staff: Monitor and maintain ATMs.
+Entity Information
+Accounts: Hold financial information.
+Transactions: Record all operations performed on the ATM.
+Architecture Phase
+Architecture Information
+Hardware components: Display screen, card reader, cash dispenser, keypad.
+Software components: Operating system, transaction processing software.
+Component Design
+Interface design: User interface for interaction.
+Backend design: Database management, transaction processing.
+Interaction Information
+User interactions: Insert card, enter PIN, select operation.
+System responses: Display balance, dispense cash, confirm transactions.
+Design Phase
+Class Diagram Information
+Account class: Attributes (account number, balance), operations (withdraw, deposit).
+Transaction class: Attributes (transaction ID, amount), operations (record transaction).
+Detailed Design
+User interface design: Layout, buttons, screens.
+Data flow design: How data moves between components.
+Operation flow design: Step-by-step process for each transaction.·

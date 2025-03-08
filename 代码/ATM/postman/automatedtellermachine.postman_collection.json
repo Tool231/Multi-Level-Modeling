@@ -1,0 +1,601 @@
+{
+	"info": {
+		"_postman_id": "46016f7f-1629-4d3e-b17f-2ad7ab3fde29",
+		"name": "automatedtellermachine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/user/queryUser?userId=23",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/user/queryUser?userId=23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"queryUser"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "23"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/user/queryUser?userId=-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"queryUser"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/bankcard/delete?cardId=1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bankcard/delete?cardId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bankcard",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "cardId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mdf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bankcard/modify?cardId=1&password=114514",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bankcard",
+						"modify"
+					],
+					"query": [
+						{
+							"key": "cardId",
+							"value": "1"
+						},
+						{
+							"key": "password",
+							"value": "114514"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bankcard/delete?cardId=-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bankcard",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "cardId",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/bankcard/queryCard?cardId=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bankcard/queryCard?cardId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bankcard",
+						"queryCard"
+					],
+					"query": [
+						{
+							"key": "cardId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/bankcard/queryCard?cardId=-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bankcard",
+						"queryCard"
+					],
+					"query": [
+						{
+							"key": "cardId",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/bankcard/create?cardId=1&cardStatus=NORMAL&cardCatalog=DEPOSIT&password=1234&balance=200",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/bankcard/create?cardId=1&cardStatus=NORMAL&cardCatalog=DEPOSIT&password=1234&balance=200",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bankcard",
+						"create"
+					],
+					"query": [
+						{
+							"key": "cardId",
+							"value": "1"
+						},
+						{
+							"key": "cardStatus",
+							"value": "NORMAL"
+						},
+						{
+							"key": "cardCatalog",
+							"value": "DEPOSIT"
+						},
+						{
+							"key": "password",
+							"value": "1234"
+						},
+						{
+							"key": "balance",
+							"value": "200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/bankcard/create?cardId=-1&cardStatus=NORMAL&cardCatalog=DEPOSIT&password=1234&balance=200",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bankcard",
+						"create"
+					],
+					"query": [
+						{
+							"key": "cardId",
+							"value": "-1"
+						},
+						{
+							"key": "cardStatus",
+							"value": "NORMAL"
+						},
+						{
+							"key": "cardCatalog",
+							"value": "DEPOSIT"
+						},
+						{
+							"key": "password",
+							"value": "1234"
+						},
+						{
+							"key": "balance",
+							"value": "200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/user/delete?userId=23",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user/delete?userId=23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "23"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mdf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user/modify?userId=23&password=114514",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"modify"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "23"
+						},
+						{
+							"key": "password",
+							"value": "114514"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user/delete?userId=-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/user/create?userId=27&name=yigit&address=Ankara",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/automatedTellerMachine/inputCard?cardId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"automatedTellerMachine",
+						"inputCard"
+					],
+					"query": [
+						{
+							"key": "cardId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/automatedTellerMachine/inputCard?cardId=-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"automatedTellerMachine",
+						"inputCard"
+					],
+					"query": [
+						{
+							"key": "cardId",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/automatedTellerMachine/inputPassword?password=1234",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/automatedTellerMachine/inputPassword?password=1234",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"automatedTellerMachine",
+						"inputPassword"
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/automatedTellerMachine/checkBalance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/automatedTellerMachine/checkBalance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"automatedTellerMachine",
+						"checkBalance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/automatedTellerMachine/withdrawCash?quantity=50",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/automatedTellerMachine/withdrawCash?quantity=50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"automatedTellerMachine",
+						"withdrawCash"
+					],
+					"query": [
+						{
+							"key": "quantity",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/automatedTellerMachine/withdrawCash?quantity=-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"automatedTellerMachine",
+						"withdrawCash"
+					],
+					"query": [
+						{
+							"key": "quantity",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/automatedTellerMachine/depositFunds?quantity=110",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/automatedTellerMachine/depositFunds?quantity=110",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"automatedTellerMachine",
+						"depositFunds"
+					],
+					"query": [
+						{
+							"key": "quantity",
+							"value": "110"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/automatedTellerMachine/depositFunds?quantity=-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"automatedTellerMachine",
+						"depositFunds"
+					],
+					"query": [
+						{
+							"key": "quantity",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/automatedTellerMachine/ejectCard",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/automatedTellerMachine/ejectCard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"automatedTellerMachine",
+						"ejectCard"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
